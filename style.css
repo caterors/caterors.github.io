@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto');
+
+body{ font-family: ' Roboto', sans-serif; 
+}
+
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background:#222333;
+    width:100%;
+    height:20vh;
+    position:relative;
+    top:0;
+}
+nav{
+   display: flex;
+   justify-content:space-between;
+   padding:2% 3%;
+   text-align:center;
+}
+.nav-links{
+    flex:1;
+    text-align:center;
+}
+.nav-links>ul>li{
+    list-style-type:none;
+    padding:8px;
+    display:inline-block;
+    position:relative;
+}
+nav h3{
+    color:#fff;
+    padding:0;
+    margin:10px;
+}
+.nav-links a{
+    color:firebrick;
+    text-decoration:none;
+}
+.nav-links>ul>li::after{
+    content:"";
+    width:0%;
+    height:2px;
+    display:block;
+    margin: auto;
+    transition:0.5s; 
+}
+.active::after{
+    content:"";
+    width:100%;
+    height:2px;
+    background:firebrick;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.welcome{
+    padding-top:80px;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("bonma_img3.jpg");
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:100px 0;
+    border-radius:10px;
+    padding-bottom:80px;
+}
+.welcome p{
+    color:white;
+    font-size:24px;
+    margin-bottom:40px;
+    padding:19px;
+}
+ .contact-button{
+    color:#fff;
+    border:1px solid white;
+    padding:12px 34px;
+    text-decoration:none;
+    transition:1s;
+    background:transparent;
+    font-size: 13px;
+}
+.contact-button:hover{
+    background:brown;
+    border:1px solid brown;
+}
+.footer{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("bonma_img15.jpg");
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    width:100%;
+    text-align:center;
+    padding:30px 0 0;
+    color:white;
+ } 
+.footer-body{
+    column-count:2;
+    text-align:center;
+}
+.footer-body li{
+    list-style-type:none;
+    margin-bottom:20px;
+}
+.footer-body ul{
+      display:block;
+      padding:0;
+      margin:0; 
+}
+.footer-body a{
+     text-decoration:none;
+     color:#fff;
+     font-weight:normal;
+}
+.footer .fa{
+    color:#4285F4;
+    margin:0 13px;
+    padding:10px;
+    font-size:20px;
+}
+.sub-header{
+    width:100%;
+    height:50vh;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("bonma_img15.jpg");
+    background-size:cover;
+     
+}
+.about{
+    width:90%;
+    margin:40px auto;
+    height:auto;
+}
+.description{
+     padding:15px;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("bonma_img7.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.about h1{
+    color:#4285F4;   
+}
+.about p{
+    font-size:15px; 
+    color:#fff;
+}
+.about img{
+    max-width:100%;
+    height:auto;
+    border-top-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.contact{
+    width:90%;
+    margin:20px auto;
+    height:auto;
+}
+.contact-box h3{
+    text-align:left;
+}
+.contact-form input, .contact-form textarea{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+.contact-form button{
+    margin:10px 0;
+}
+.contact-us{
+    width:80%;
+    margin:auto;
+    padding:10px;
+       }
+.contact-us p{
+    color:#222;
+}
+.contact-col{
+    flex-basis:48%;
+    margin-bottom:30px;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("bonma_img17.jpg");
+    background-size:cover;
+    background-position:center;
+    padding:15px;
+}
+.contact-col h3{
+    color:#4285F4;
+}
+.contact-col div{
+    display:flex;
+    text-align:center;
+    margin-bottom:10px;
+       }
+.contact-col div .fa{
+    font-size:24px;
+    margin:10px;
+    margin-right:20px;
+    color:#4285F4; 
+}
+.contact-col div p{
+    padding:0;
+    font-size:13px;
+}
+.contact-col div span{
+    color:#fff;
+    font-size:14px;
+    font-weight:400;
+    padding:15px;
+}
+.contact-col input, .contact-col textarea{
+    margin-bottom:17px;
+    width:100%;
+    padding:15px;
+    outline:none; 
+    background:transparent;
+    border:1px solid white;
+    color:#4285F4 ;
+}
+.services{
+    width:80%;
+    margin:25px auto;
+    background:white;
+    height:auto;
+}
+
+.services-col img{
+    max-width:100%;
+    height:auto;
+}
+.services-col h1{
+    color:#4285F4;
+}
+.services-col p{
+    font-size:15px;
+     background:#4285F4;
+     padding:10px;
+     color:#fff;
+}
+.services-col ul{ 
+   list-style-type:none;
+   padding:0; 
+   margin:0; 
+   margin-top:15px;
+} 
+.services-col>ul>li>a{
+   display:block; 
+} 
+.services-col li{ 
+    background:chocolate; 
+    margin-bottom:20px; 
+    width:100%; border-bottom-right-        radius:10px; border-top-left-radius:10px; 
+     color:#fff; 
+     text-decoration:none; 
+     font-size:15px; 
+     padding:15px; 
+     border-radius:10px;
+} 
+.services-col>ul>li:hover{ 
+       transition:3s;
+       border-top-left-radius:10px;
+       background:#F0EAD6;
+       color:#111; 
+       border-bottom-right-radius:10px; 
+}
+.services-col{
+    flex-basis:48%;
+    padding:5px;
+}
+.home-services{
+   width:80%;
+   height:auto;
+   margin:50px auto;
+   margin-bottom:80px;
+}
+.service{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("bonma_img14.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    
+}
+.service ul{
+    display:block;
+}
+.service li{
+    list-style-type:square;
+    margin-bottom:10px;
+    color:#fff;
+    margin-left:0;
+}
+.service a{
+   text-decoration:none;
+    font-weight:normal;
+}
+.service h3{
+    color:#4285F4;
+}
+.logo{
+    width:200px;
+    height:100px;
+}
+nav .fa{
+    display:none;
+}
+/*MOBILE DESIGN*/
+    @media screen and (max-width:767px){
+            .header{
+                position:relative;
+                top:0;
+            }
+            .welcome p{
+              font-size:18px;
+            }
+             .service{
+                  margin-top:50px;
+            }
+            .nav-links>ul>li{
+              display:block;
+            }
+            .nav-links>ul>li>a{
+              color:#222; ;
+            }
+            .nav-links{
+              position:absolute;
+              top:20vh;
+              right:0;
+              background:#fff; 
+              z-index:2;
+              width:200px;
+              height:auto;
+              text-align:left;
+              display:none;
+              box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+              border-radius:;
+            }
+            nav .icon{
+               display:block;
+               color:#4285F4; ; 
+               font-size:22px; 
+               float:left; 
+               margin:10px;
+               cursor:pointer;
+            }
+            .show {
+                  display:block;
+             } 
+            .prevy{
+                 padding:15px;
+                 cursor:pointer;
+                 font-size:24px;
+                 color:#333; 
+            }
+            
+            .nav-links ul{
+               padding:30px;
+            }
+            .nav-links>ul>li:hover::after{
+                width:0%;
+            }
+            .active::after{
+                width:0;
+            }
+            .row{
+               flex-direction:column;
+            }
+            .sub-header h1{
+               font-size:24px;
+            }
+            .contact{
+              margin-top:30px;
+            }
+            .services{
+              margin-top:20px;
+            }
+            .about{
+              margin-top:40px;
+            }
+            
+            .contact-col input, .contact-col textarea{
+               box-sizing:border-box; 
+            }
+             
+            .contact-col div .fa{
+              font-size:20px;
+              margin:10px;
+              margin-right:20px;
+            }
+            .about-col h1{
+               font-size:18px;
+            }
+            .blog-left h1{
+               font-size:20px;
+            }
+            .services p{
+              font-size:18px;
+            }
+            .footer{
+              width:100%;
+              padding:30px 0;
+              text-align:center;
+           }
+           .footer h5{
+               margin:0;
+               margin-bottom:15px;
+               padding:0;
+               font-weight:300;
+               color:#fff;
+               font-size:15px;
+           }
+            .footer p{
+             color:#fff; 
+             font-size:12px;
+           }
+          
+           .sub-header{
+             height:20vh;
+             width:100%;
+             background:#222333;
+             position:relative;
+             top:0;
+           }
+       } 
+/*DISIGN FOR  TABLETS*/
+
+@media screen and (min-width:767px) and (max-width:1023){
+
+}
+/*DISIGN FOR A DESKTOP*/
+
+@media screen and(min-width:1024px){
+   .home-col{
+    flex-basis:48%;
+    padding:5px;
+}
+}

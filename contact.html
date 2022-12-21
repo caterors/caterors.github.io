@@ -1,0 +1,83 @@
+<!DOCTYPE html>                                                                                                            <html>
+<head>
+     <title>webpge</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+     <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+     <section class="header">
+         <nav> 
+             <h3>Bonmacaterors</h3>
+             <div class="nav-links" id="nav-link">
+                 <i class="fa fa-angle-left" onclick="hidemenu()"></i>
+                 <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="services.html">Services</a></li> 
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                 </ul>
+              </div>
+             <i class="fa fa-bars icon" onclick="myFunction()"></i> 
+         </nav>
+     </section>
+     <section class="contact">
+           <div class="row">
+               <h2>Contact Us</h2>
+               <div class="contact-col">
+                     <div>
+                      <i class="fa fa-home"></i>
+                      <span>P.o Box 101-30500, Nairobi</span>
+                  </div>
+                  <div>
+                      <i class="fa fa-phone"></i>
+                      <span>+254778776556</span>  
+                  </div>
+                  <div>
+                      <i class="fa fa-envelope-o"></i><span>bonmacaterors@gmail.com</span>
+                  </div>
+               </div>
+               <div class="contact-col ">
+                <h3>Email Us</h3>
+                  <form action="form_handler_page.php">
+                       <input type="text" name="name" placeholder="Enter your name" required/>
+                       <input type="email" name="email" placeholder="Enter Email" required/> 
+                       <input type="text" name="subject" placeholder="Enter subject" requred/>
+                       <textarea rows="8" name="message" placeholder="Enter message" required></textarea>
+                       <button type="submit" class="contact-button ">send message</button>
+                  </form>
+               </div>
+           </div>
+     </section>
+    <section class="footer">
+        <div class="footer-body">
+              <ul> 
+                   <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li> 
+                  <li><a href="#">Privacy & Policy</a></li>
+                 <li><a href="#">Terms of Use</a></li>
+                </ul>
+        </div>
+        <a href="http://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="http://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        <p>©2022 Bonma caterors | All rights reserved.</p>
+    </section>
+    <script type="text/javascript">
+        //javascript code...
+      function myFunction() { 
+          document.getElementById("nav-link") .classList.toggle("show"); 
+} 
+             window.onclick = function(event){    if(!event.target.matches('.icon')){ var dropdowns = document.getElementsByClassName ("nav-links"); var i; for(i=0; i < dropdowns.length; i++){   var openDropdown = dropdowns[i]; 
+       if (openDropdown.classList.contains ('show')) { 
+           openDropdown.classList.remove('show'); 
+      }
+     } 
+   }
+ } 
+  </script>
+</body>
+</html>   
+
