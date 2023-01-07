@@ -153,6 +153,10 @@ nav h3{
     border-top-left-radius:20px;
     border-bottom-right-radius:20px;
 }
+.logo{
+    width:180px;
+    height:60px;
+}
 .row{
     margin-top:5%;
     display:flex;
